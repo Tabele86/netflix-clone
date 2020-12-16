@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
-import axios from './axios';
+import axios from '../axios'
 import './Row.css';
 
 
@@ -66,7 +66,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 					/>
 				))}
 			</div>
-			{trailerUrl && <YouTube videoId={trailerUrl} opts={opts} onReady={this._onReady}/>}
+			{trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
 		</div>
 	);
 }
